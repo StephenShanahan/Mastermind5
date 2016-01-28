@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/redPeg"
+        android:src="@drawable/red_peg2"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/greenPeg"
+        android:src="@drawable/green_peg2"
+        android:background="#ffffff"
+        android:layout_above="@+id/redPeg"
+        android:layout_alignLeft="@+id/redPeg"
+        android:layout_alignStart="@+id/redPeg" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yellowPeg"
+        android:src="@drawable/yellow_peg2"
+        android:background="#ffffff"
+        android:layout_above="@+id/greenPeg"
+        android:layout_alignLeft="@+id/greenPeg"
+        android:layout_alignStart="@+id/greenPeg" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bluePeg"
+        android:src="@drawable/blue_peg2"
+        android:background="#ffffff"
+        android:layout_above="@+id/yellowPeg"
+        android:layout_alignLeft="@+id/yellowPeg"
+        android:layout_alignStart="@+id/yellowPeg" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="38.5dp" >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/imageView1"
+                android:src="@drawable/pegslot"
+                android:onClick="select" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/imageView2"
+                android:src="@drawable/pegslot"
+                android:layout_toRightOf="@+id/imageView1"
+                android:layout_toEndOf="@+id/imageView1" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/pegslot"
+                android:layout_toRightOf="@+id/imageView2"
+                android:layout_toEndOf="@+id/imageView2" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/imageView3"
+                android:src="@drawable/pegslot"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_toEndOf="@+id/imageView" />
+
+            <ImageView
+                android:layout_width="21.75dp"
+                android:layout_height="21.75dp"
+                android:id="@+id/pintopleft"
+                android:src="@drawable/pinslot"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/pintopright"
+                android:layout_toStartOf="@+id/pintopright" />
+
+            <ImageView
+                android:layout_width="21.75dp"
+                android:layout_height="21.75dp"
+                android:id="@+id/pintopright"
+                android:src="@drawable/pinslot"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/pinbottomright"
+                android:layout_alignStart="@+id/pinbottomright" />
+
+            <ImageView
+                android:layout_width="21.75dp"
+                android:layout_height="21.75dp"
+                android:id="@+id/pinbottomleft"
+                android:src="@drawable/pinslot"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/imageView3"
+                android:layout_toEndOf="@+id/imageView3" />
+
+            <ImageView
+                android:layout_width="21.75dp"
+                android:layout_height="21.75dp"
+                android:id="@+id/pinbottomright"
+                android:src="@drawable/pinslot"
+                android:layout_alignTop="@+id/pinbottomleft"
+                android:layout_toRightOf="@+id/pinbottomleft"
+                android:layout_toEndOf="@+id/pinbottomleft" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/footerView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/peg_pin_slot" />
+
+        <include
+            android:id="@+id/footerView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/peg_pin_slot" />
+
+        <include
+            android:id="@+id/footerView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/peg_pin_slot" />
+
+        <include
+            android:id="@+id/footerView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/peg_pin_slot" />
+
+        <include
+            android:id="@+id/footerView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/peg_pin_slot" />
+
+        <include
+            android:id="@+id/footerView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/peg_pin_slot" />
+
+        <include
+            android:id="@+id/footerView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/peg_pin_slot" />
+
+        <include
+            android:id="@+id/footerView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/peg_pin_slot" />
+
+        <include
+            android:id="@+id/footerView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/peg_pin_slot" />
+
+    </LinearLayout>
+</RelativeLayout>
